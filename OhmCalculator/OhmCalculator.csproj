@@ -201,6 +201,12 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\OhmCalculator.Library\OhmCalculator.Library.csproj">
+      <Project>{3d844f8d-1e30-41d6-a2f5-b47ffec33cc3}</Project>
+      <Name>OhmCalculator.Library</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
