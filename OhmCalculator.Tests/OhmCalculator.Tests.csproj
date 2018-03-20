@@ -100,6 +100,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\OhmCalculator.Library\OhmCalculator.Library.csproj">
+      <Project>{3d844f8d-1e30-41d6-a2f5-b47ffec33cc3}</Project>
+      <Name>OhmCalculator.Library</Name>
+    </ProjectReference>
     <ProjectReference Include="..\OhmCalculator\OhmCalculator.csproj">
       <Project>{AE5866EF-42F6-474F-A317-DF6F9E95587E}</Project>
       <Name>OhmCalculator</Name>

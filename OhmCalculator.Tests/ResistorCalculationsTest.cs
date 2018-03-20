@@ -1,6 +1,6 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-
+using OhmCalculator.Library;
 namespace OhmCalculator.Tests
 {
     [TestClass]
@@ -9,6 +9,8 @@ namespace OhmCalculator.Tests
         [TestMethod]
         public void ColorNotInList()
         {
+
+
 
             Assert.Inconclusive();
 

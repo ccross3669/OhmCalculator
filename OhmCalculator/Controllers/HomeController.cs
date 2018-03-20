@@ -10,7 +10,7 @@ namespace OhmCalculator.Controllers
     {
         public ActionResult Index()
         {
-            ResistorCalculations value = new ResistorCalculations("asdfdfsdf");
+            ResistorCalculations value = new ResistorCalculations("asdasd");
 
             var test = value.GetbandValues();
 

@@ -7,23 +7,19 @@ using System.Threading.Tasks;
 namespace OhmCalculator.Library
 {
     public class ResistorCalculations
-    {
-        
-        private string BandColor { get; set; }
+    {   
 
-
-        public ResistorCalculations(string color)
+        public IEnumerable<string> GetResistorColors()
         {
-            this.BandColor = color;
+            return new List<string> { "none" ,"pink", "silver", "gold", "black", "brown", "red", "orange", "yellow", "green", "blue", "violet", "grey", "white" };
         }
 
-
-        public ResistorBand GetbandValues()
+        public ResistorBand GetbandValues(string bandColor)
         {
 
             ResistorBand band = new ResistorBand();
 
-            switch(BandColor.ToLower())
+            switch(bandColor.ToLower())
             {
                 case "none":
                     band.RingColorName = "None";
@@ -151,7 +147,9 @@ namespace OhmCalculator.Library
                     band.SignificantFigure = 9;
                     band.Multiplier = 100000000;      
                     break;
-
+                default:
+                    band = null;
+                    break;
             }
             return band;
         }

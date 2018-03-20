@@ -16,5 +16,11 @@ namespace OhmCalculator.Library
         /// <param name="bandCColor">The color of the decimal multiplier band.</param>
         /// <param name="bandDColor">The color of the tolerance value band.</param>
         int CalculateOhmValue(string bandAColor, string bandBColor, string bandCColor, string bandDColor);
+
+        /// <summary>
+        /// Calculates the Tolerance of a resistor based on fourth color.
+        /// </summary>
+        /// <param name="bandDColor">The color of the tolerance value band.</param>
+        int GetToleranceValue(string bandDColor);
     }
 }
